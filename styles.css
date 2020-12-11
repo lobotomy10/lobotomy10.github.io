@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding:0;
+    margin:0;
+    background-color:#e7e7e7;
+    font-family: 'Poppins', sans-serif;
+    font-size:1.2rem;
+}
+
+.main-nav ul {
+    max-width: 375px;
+    display: flex;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    list-style: none;
+    border-bottom: 2px solid #6677D1;
+    
+}
+
+.main-nav a {
+    color:inherit;
+    text-decoration: none;
+    padding:2rem;
+    opacity: 0.60;
+}
+
+.main-nav a:hover{
+    opacity: 1.0;
+}
+
+.home-main-section {
+    padding: 50px 200px 0px 200px;
+}
+
+.home-main-title {
+    font-size: 3rem;
+}
+
+.home-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.75;
+}
+
+.learned-list{
+    padding:80px 10px;
+    list-style-type: circle;
+}
+
+.learned-list li{
+    padding-bottom:80px;
+    list-style:none;
+}
+
+.learned-list li:before {
+    content:"\f101";
+    position: relative;
+    font-family: FontAwesome;
+    margin-right: 2em;
+    color: rgb(0, 47, 255);
+    font-size: 1.3em;
+}
+
+.learned-list strong{
+    display: inline-block;
+    width: 300px;
+}
+
+/*page-design*/
+.home-page-circle-1 {
+    position: absolute;
+    width:15vw;
+    height:15vw;
+    border-radius: 50%;
+    background-color:#FEBFFF;;
+    top:5vw;
+    left:30vw;
+    z-index:-1;
+    opacity: 0.75;
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width:9vw;
+    height:9vw;
+    border-radius: 50%;
+    background-color:#FEBFFF;;
+    top:35vw;
+    left:65vw;
+    z-index:-1;
+    opacity: 0.75;
+}
+
+.home-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width:25vw;
+    height:25vw;
+    border-radius: 50%;
+    background-color:#BDE3FF;
+    top:37vw;
+    left:-7vw;
+    z-index:-1;
+}
+
+.home-page-circle-4 {
+    position: absolute;
+    overflow: hidden;
+    width:15vw;
+    height:15vw;
+    border-radius: 50%;
+    background-color:#0091EF;
+    top:9vw;
+    right:15vw;
+    z-index:-1;
+    opacity: 0.9;
+}
+
+/*My image design*/
+
+.home-main-section .my-img {
+    position: absolute;
+    overflow: hidden;
+    top:8vw;
+    right:20vw;
+}
+
+
+/*footer*/
+.social-footer-icons {
+    margin-left:150px;
+
+}
+
+.social-footer-icons i{
+    font-size:1.5em;
+    color:black;
+    padding:0.4rem;
+}
+
+.social-footer-icons i:hover{
+    opacity: 0.75;
+}
+
+/*media*/
+@media (max-width: 1350px) {
+    .home-main-section .my-img {
+        display: none;
+    }
+    .home-page-circle-4{
+        display: none;
+    }
+}
+
+/*About.html*/
+
+.about-cv-cms{
+    padding:100px 200px;
+    opacity: 0.75;
+    animation:slidein;
+}
+
+/*CV.html*/
